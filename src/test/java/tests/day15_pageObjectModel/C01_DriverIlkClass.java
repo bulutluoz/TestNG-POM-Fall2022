@@ -47,5 +47,14 @@ public class C01_DriverIlkClass {
         aramaKutusu.sendKeys("Nutella"+ Keys.ENTER);
 
         Driver.getDriver().get("https://www.wisequarter.com");
+
+        Driver.closeDriver();
+    }
+
+    @Test
+    public void test2(){
+
+
+        Driver.closeDriver();
     }
 }
