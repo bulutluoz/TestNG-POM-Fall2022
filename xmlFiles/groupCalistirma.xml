@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="grup calistirma">
+    <test name="grup calistirma 1">
+        <!-- Eger test method'larini belirlediginiz gruplara gore calistirmak isterseniz
+             oncesinde calistirmak istediginiz tum test method'larina
+             grup bilgisi atamalisiniz 
+             
+             grup calistirmada 2 bilgiye ihtiyacimiz var
+             1- hangi package veya class'lardan test method'lari calisacak
+             2- hangi gruptaki testler calisacak
+             -->
+        <groups>
+            <run>
+                <exclude name="regression"></exclude>
+                <include name="smoke"></include>
+            </run>
+        </groups>
+        <packages>
+            <package name="tests.day16_pageObjectModel"></package>
+            <package name="tests.day15_pageObjectModel"></package>
+        </packages>
+    </test>
+</suite>

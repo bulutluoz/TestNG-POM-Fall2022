@@ -27,7 +27,7 @@ public class C04_PagesKullanimi {
         Driver.closeDriver();
     }
 
-    @Test(dependsOnMethods = "bicycleTesti")
+    @Test(dependsOnMethods = "bicycleTesti",groups = "smoke")
     public void javaTesti(){
         amazonPage.aramaKutusu.clear();
         amazonPage.aramaKutusu.sendKeys("java"+Keys.ENTER);
@@ -36,7 +36,7 @@ public class C04_PagesKullanimi {
         Assert.assertTrue(actualAramaSonucu.contains(expectedKelime));
     }
 
-    @Test
+    @Test(groups = "smoke")
     public void bicycleTesti(){
         Driver.getDriver().get("https://www.amazon.com");
         amazonPage.aramaKutusu.sendKeys("bicycle"+ Keys.ENTER);
