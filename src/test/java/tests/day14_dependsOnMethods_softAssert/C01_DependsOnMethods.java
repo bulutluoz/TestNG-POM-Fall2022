@@ -32,7 +32,7 @@ public class C01_DependsOnMethods extends TestBaseClass {
         //    amazon anasayfasina gidip, amazona gittigimizi test edin
         driver.get("https://www.amazon.com");
 
-        String expectedUrl="ramazon.com";
+        String expectedUrl="amazon.com";
         String actualUrl= driver.getCurrentUrl();
         Assert.assertTrue(actualUrl.contains(expectedUrl));
 

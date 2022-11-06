@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="method calistirma">
+    <test name="method calistirma1">
+        <classes>
+            <class name="tests.day14_dependsOnMethods_softAssert.C03_SoftAssert">
+                <methods>
+                    <include name="hardAssertTesti"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
