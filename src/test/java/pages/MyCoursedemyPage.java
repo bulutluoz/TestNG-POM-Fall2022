@@ -6,7 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
 public class MyCoursedemyPage {
-    MyCoursedemyPage(){
+    public MyCoursedemyPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
@@ -21,4 +21,7 @@ public class MyCoursedemyPage {
 
     @FindBy(xpath = "//button[text()='Login']")
     public WebElement loginButonu;
+
+    @FindBy(linkText = "My courses")
+    public WebElement coursesLinki;
 }
