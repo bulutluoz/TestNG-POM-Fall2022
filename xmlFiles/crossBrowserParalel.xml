@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="Sirali cross browser testi" >
+<suite name="Sirali cross browser testi" thread-count="2" parallel="tests" verbose="3" >
     <!--
         Cross browser testleri normal testlerimiz uzerinde calismaz
         CB icin ozel bir Driver class'i ve TestBase olusturmamiz gerekir

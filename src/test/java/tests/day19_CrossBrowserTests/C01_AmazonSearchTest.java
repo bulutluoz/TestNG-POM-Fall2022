@@ -5,6 +5,7 @@ import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import utilities.ConfigReader;
+import utilities.ReusableMethods;
 import utilities.TestBaseCross;
 
 public class C01_AmazonSearchTest extends TestBaseCross {
@@ -21,5 +22,6 @@ public class C01_AmazonSearchTest extends TestBaseCross {
         String expectedKelime="Nutella";
 
         Assert.assertTrue(actualSonucyazisi.contains(expectedKelime));
+        ReusableMethods.bekle(10);
     }
 }
