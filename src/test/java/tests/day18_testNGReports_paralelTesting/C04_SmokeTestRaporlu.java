@@ -16,9 +16,6 @@ import utilities.TestBaseRapor;
 public class C04_SmokeTestRaporlu extends TestBaseRapor {
     MyCoursedemyPage myCoursedemyPage=new MyCoursedemyPage();
 
-
-
-
     // uc farkli test method'u ile yanlis bilgilerle giris yapilamadigini test edin
     @Test
     public void yanlisKullaniciTesti(){
