@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Sirali cross browser testi" >
+
+    <test name="Cross browser calistirma ilk browser">
+        <classes>
+            <class name="tests.day14_dependsOnMethods_softAssert.C04_SoftAssert"></class>
+            <class name="tests.day15_pageObjectModel.C03_PagesKullanimi"></class>
+        </classes>
+    </test>
+
+    <test name="Cross browser calistirma ikinci browser">
+        <classes>
+            <class name="tests.day15_pageObjectModel.C02_DriverKullanimi"></class>
+            <class name="tests.day14_dependsOnMethods_softAssert.C03_SoftAssert"></class>
+        </classes>
+    </test>
+
+</suite>

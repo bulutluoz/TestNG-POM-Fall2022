@@ -1,4 +1,4 @@
-package tests.day19_dataProvider_crossBrowserTesting;
+package tests.day19_dataProvider;
 
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
