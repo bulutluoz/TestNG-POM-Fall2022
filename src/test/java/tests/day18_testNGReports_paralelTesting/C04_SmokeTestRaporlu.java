@@ -46,6 +46,7 @@ public class C04_SmokeTestRaporlu extends TestBaseRapor {
         // Mycoursedemy anasayfasina gidin
         Driver.getDriver().get(ConfigReader.getProperty("myUrl"));
         // login linkine basin
+        myCoursedemyPage=new MyCoursedemyPage();
         myCoursedemyPage.loginLinki.click();
         extentTest=extentReports.createTest("yanlis password","yanlis password ile giris yapilamaz");
         // 2- gecerli kullanici adi, yanlis password
@@ -66,6 +67,7 @@ public class C04_SmokeTestRaporlu extends TestBaseRapor {
         // Mycoursedemy anasayfasina gidin
         Driver.getDriver().get(ConfigReader.getProperty("myUrl"));
         // login linkine basin
+        myCoursedemyPage=new MyCoursedemyPage();
         myCoursedemyPage.loginLinki.click();
         extentTest=extentReports.createTest("yanlis kullanici adi ve password","yanlis kullanici adi ve yanlis password ile giris yapilamaz");
         // 3- yanlis kullanici adi, yanlis password
