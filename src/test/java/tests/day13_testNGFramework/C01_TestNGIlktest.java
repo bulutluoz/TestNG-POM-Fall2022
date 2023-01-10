@@ -16,19 +16,18 @@ public class C01_TestNGIlktest extends TestBase {
     bunlar harf sirasina gore calisir
      */
 
-    @Test(priority = 10)
+    @Test(priority = -5)
     public void ilkTest(){
         driver.get("https://www.amazon.com");
     }
-
-
     @Test
     public void ikinciTest(){
         driver.get("https://www.youtube.com");
     }
-
     @Test
     public void ucuncuTest(){
         driver.get("https://www.wisequarter.com");
     }
 }
+
+

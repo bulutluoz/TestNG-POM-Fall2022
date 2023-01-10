@@ -15,7 +15,7 @@ public class EndToEndTesti {
      */
 
     @Test
-    public void e2eKursOlusturmaTesti(){
+    public void e2eKursOlusturmaTesti() throws InterruptedException {
         // MyCoursedemy sayfasina gidin
         Driver.getDriver().get(ConfigReader.getProperty("myUrl"));
         // gecerli kullanici adi ve sifre girerek sisteme login olun
@@ -55,6 +55,7 @@ public class EndToEndTesti {
         myCoursedemyPage.submitButonu.click();
         // yeni kursun olusturuldugunu test edin
         Assert.assertTrue(myCoursedemyPage.backToCourseListButonu.isEnabled());
+        Thread.sleep(5000);
 
         Driver.closeDriver();
     }

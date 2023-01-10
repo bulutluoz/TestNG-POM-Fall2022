@@ -8,6 +8,7 @@ import utilities.Driver;
 
 public class MyCoursedemyPage {
     public MyCoursedemyPage(){
+
         PageFactory.initElements(Driver.getDriver(),this);
     }
 

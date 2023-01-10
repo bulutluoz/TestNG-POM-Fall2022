@@ -27,7 +27,7 @@ public class PozitifLoginTesti {
 
         Assert.assertTrue(myCoursedemyPage.coursesLinki.isDisplayed());
 
-        ReusableMethods.bekle(5);
+        ReusableMethods.bekle(2);
         Driver.closeDriver();
     }
 }

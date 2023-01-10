@@ -62,9 +62,11 @@ public class C03_SoftAssert {
           soft Assertion kullanmamiz istendiginde dogrulayin (Verify) kelimeleri kullanilir.
          */
         // A.adim softAssert objesi olustur
+
         SoftAssert softAssert= new SoftAssert();
 
         // B.istenen tum assertion'lari softAssert objesini kullanarak yapin
+
         String sifre="JavAahJava";
         // 1- Ilk harf Buyuk harf olmali
         boolean ilkHarfKontrolu= sifre.charAt(0)>='A' && sifre.charAt(0)<='Z';
@@ -75,7 +77,6 @@ public class C03_SoftAssert {
         softAssert.assertTrue(sonHarfKontrolu,"Son harf kucuk harf olmali");
 
         // 3- sifre bosluk icermemeli
-
         softAssert.assertFalse(sifre.contains(" "),"Sifre bosluk icermemeli");
         // 4- uzunlugu en az 8 karakter olmali
         softAssert.assertTrue(sifre.length()>=8, "uzunluk en az 8 karakter olmali");

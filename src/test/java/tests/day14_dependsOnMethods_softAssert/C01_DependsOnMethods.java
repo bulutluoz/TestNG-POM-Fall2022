@@ -70,3 +70,5 @@ public class C01_DependsOnMethods extends TestBaseClass {
         Assert.assertTrue(sonucSayisiInt>expectedMinSonucSayisi);
     }
 }
+
+
